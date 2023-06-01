@@ -1,8 +1,6 @@
 var ulListFilms = document.querySelector('ul');
-const apiKey = process.env.API_THEMOVIEDB;
 
 function fetchData(url, callBack) {
-    console.log("apikey es: ${apiKey}" )
     var request = new XMLHttpRequest();
     request.open('GET', url);
     request.responseType = 'json';
@@ -61,4 +59,4 @@ function showFilms(response) {
     }
 }
 
-fetchData('https://api.themoviedb.org/3/movie/popular?api_key=${apikey}&language=en-US&page=1', showFilms);
+fetchData('https://api.themoviedb.org/3/movie/popular?api_key=fc10596101cb4714add74dcb40292721&language=en-US&page=1', showFilms);
