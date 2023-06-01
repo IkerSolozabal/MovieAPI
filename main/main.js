@@ -2,6 +2,7 @@ var ulListFilms = document.querySelector('ul');
 const apiKey = process.env.API_THEMOVIEDB;
 
 function fetchData(url, callBack) {
+    console.log("apikey es: ${apiKey}")
     var request = new XMLHttpRequest();
     request.open('GET', url);
     request.responseType = 'json';
